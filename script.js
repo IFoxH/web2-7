@@ -59,7 +59,7 @@ onload = function(){
 
   // ビュー×プロジェクション座標変換行列
   m.lookAt([0.0, 0.0, 5.0], [0, 0, 0], [0, 1, 0], vMatrix);// カメラ位置、注視点、上方向
-  m.perspective(45, c.width / c.height, 0.1, 200, pMatrix);// 画角 アスペクト比,近クリップ面,遠方クリップ面
+  m.perspective(45, c.width / c.height, 0.5, 200, pMatrix);// 画角 アスペクト比,近クリップ面,遠方クリップ面
   m.multiply(pMatrix, vMatrix, vpMatrix);
 
   // カウンタの宣言
